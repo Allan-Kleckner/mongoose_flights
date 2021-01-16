@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Mongoose Flights</title>
+</head>
+
+<body>
+    <h1>Flight Details</h1>
+    <a href="/">Home</a>
+    <a href="/flights">Back to All Flights</a>
+    <a href="/flights/new">Create New Flight</a>
+    <hr>
+    <h3><%= flight.airline %></h3>
+    <p><%= flight.flightNo %></p>
+    <p><%= flight.departs.toLocaleDateString() %></p>
+    <input type="datetime-local" name="arrival"><br>
+    <input type="submit" value="Add Destination">
+            <% }); %>
+        </tbody>
+    </table>
+</body>
+
+</html>
